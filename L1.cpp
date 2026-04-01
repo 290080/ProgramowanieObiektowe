@@ -28,7 +28,7 @@ void dodajOsobe(int *tabIndex, int index, string *tabImie, string imie, string *
 }
 
 void ustawObecnosc(string *tabNazwisko, bool *tabObecnosc, string nazwisko, bool obecnosc) {
-    int i = znajdzPuste(tabNazwisko);
+    int i = znajdzNazwisko(nazwisko, tabNazwisko);
     tabObecnosc[i] = obecnosc;
 }
 
